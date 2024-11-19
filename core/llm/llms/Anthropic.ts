@@ -26,7 +26,7 @@ class Anthropic extends BaseLLM {
       top_k: options.topK,
       top_p: options.topP,
       temperature: options.temperature,
-      max_tokens: options.maxTokens ?? 2048,
+      max_tokens: options.maxTokens ?? 1500,
       model: options.model === "claude-2" ? "claude-2.1" : options.model,
       stop_sequences: options.stop?.filter((x) => x.trim() !== ""),
       stream: options.stream ?? true,
